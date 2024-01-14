@@ -13,6 +13,7 @@
 // limitations under the License.
 
 /// The possible buttons that can be pressed on a mouse.
+#[derive(PartialEq, Eq)]
 pub enum MouseButton {
     None,
     Left,
