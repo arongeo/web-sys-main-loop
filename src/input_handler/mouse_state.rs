@@ -1,4 +1,5 @@
 pub enum MouseButton {
+    None,
     Left,
     Right,
     Scroll,
@@ -41,6 +42,7 @@ impl MouseState {
                     2 => MouseButton::Scroll,
                     3 => MouseButton::Misc1,
                     4 => MouseButton::Misc2,
+                    _ => MouseButton::None,
                 });
             }
 
@@ -49,5 +51,26 @@ impl MouseState {
         }
 
         return Some(buttons);
+    }
+
+    pub fn get_position(&self) -> (i32, i32) {
+        self.position
+    }
+
+    pub fn get_movement(&self) -> (i32, i32) {
+        self.movement
+    }
+
+    pub fn get_offset(&self) -> (i32, i32) {
+        self.offset
+    }
+
+    pub(crate) fn copy(&self) -> Self {
+        Self {
+            buttons_pressed: self.buttons_pressed,
+            position: self.position,
+            offset: self.offset,
+            movement: self.movement,
+        }
     }
 }

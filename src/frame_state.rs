@@ -1,4 +1,6 @@
+use crate::input_handler::mouse_state::MouseState;
+
 pub struct FrameState {
-    pressed_keys: Vec<String>,
-    mouse_state: MouseState,
+    pub(crate) pressed_keys: Vec<String>,
+    pub(crate) mouse_state: MouseState,
 }
