@@ -136,7 +136,7 @@ dependencies = [
 
 [[package]]
 name = "web-sys-main-loop"
-version = "0.1.0"
+version = "0.1.3"
 dependencies = [
  "wasm-bindgen",
  "web-sys",

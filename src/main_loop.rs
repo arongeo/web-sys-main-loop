@@ -53,6 +53,8 @@ where
     *main_loop_starter.borrow_mut() = Some(Closure::new(move || {
         main_loop_function(input_state.create_frame_state());
 
+        input_state.clear();
+
         request_animation_frame(&window_clone, main_loop.borrow().as_ref().unwrap());
     }));
 
