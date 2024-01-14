@@ -66,10 +66,8 @@ impl InputState {
     pub(crate) fn clear(&self) {
         let mut mouse_state = self.mouse_state.borrow_mut();
 
-        mouse_state.position = (0, 0);
         mouse_state.movement = (0, 0);
         mouse_state.offset = (0, 0);
-        mouse_state.buttons_pressed = 0;
     }
 
     pub(crate) fn create_frame_state(&self) -> FrameState {
