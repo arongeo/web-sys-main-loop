@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["window"],"struct":["Document","Element","Event","EventTarget","HtmlCanvasElement","HtmlElement","KeyboardEvent","MouseEvent","Node","UiEvent","WebGl2RenderingContext","Window"]};
