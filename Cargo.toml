@@ -7,7 +7,7 @@ version = "0.1.0"
 edition = "2021"
 package = "Apache-2.0"
 license-file = "LICENSE"
-keywords = ["gamedev", "web_sys", "gameloop", "wasm", "web", "input"]
+keywords = ["gamedev", "web_sys", "gameloop", "wasm", "input"]
 categories = ["game-development", "development-tools", "wasm"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
