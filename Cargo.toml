@@ -3,10 +3,9 @@ name = "web-sys-main-loop"
 authors = ["arongeo"]
 description = "Provides a main loop (or game loop) for web_sys windows"
 repository = "https://github.com/arongeo/web-sys-main-loop"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 package = "Apache-2.0"
-license-file = "LICENSE"
 keywords = ["gamedev", "web_sys", "gameloop", "wasm", "input"]
 categories = ["game-development", "development-tools", "wasm"]
 
