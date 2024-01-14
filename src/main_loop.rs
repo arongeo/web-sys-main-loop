@@ -12,7 +12,7 @@ fn request_animation_frame(window: &web_sys::Window, function: &Closure<dyn FnMu
         .expect("Frame dropped");
 }
 
-/// Runs the closure provided with requestAnimationFrame
+/// Runs the closure provided with [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
 /// every possible frame
 ///
 /// Use it as:
