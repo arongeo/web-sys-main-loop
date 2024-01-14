@@ -12,6 +12,20 @@ fn request_animation_frame(window: &web_sys::Window, function: &Closure<dyn FnMu
         .expect("Frame dropped");
 }
 
+/// Runs the closure provided with requestAnimationFrame
+/// every possible frame
+///
+/// Use it as:
+/// ```
+/// use web_sys_main_loop::{start, FrameState};
+///
+/// let window = web_sys::window().unwrap();
+/// ...
+/// start(&window, move |frame_state: FrameState| {
+///     ...
+/// });
+///
+/// ```
 pub fn start<F>(window: &web_sys::Window, mut main_loop_function: F)
 where
     F: FnMut(FrameState) + 'static,
