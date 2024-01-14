@@ -1,9 +1,14 @@
 [package]
 name = "web-sys-main-loop"
+authors = ["arongeo"]
+description = "Provides a main loop (or game loop) for web_sys windows"
+repository = "https://github.com/arongeo/web-sys-main-loop"
 version = "0.1.0"
 edition = "2021"
 package = "Apache-2.0"
-license-file = "LICENSE."
+license-file = "LICENSE"
+keywords = ["gamedev", "web_sys", "loop", "gameloop", "mainloop", "game", "wasm", "web", "input"]
+categories = ["game-development", "development-tools", "wasm"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
