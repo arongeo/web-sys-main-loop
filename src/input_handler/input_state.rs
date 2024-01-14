@@ -26,6 +26,8 @@ fn mouse_state_parser_setup(window: &web_sys::Window, mouse_state: Rc<RefCell<Mo
     window
         .add_event_listener_with_callback("mousemove", mouse_event_handler.as_ref().unchecked_ref())
         .unwrap();
+
+    mouse_event_handler.forget();
 }
 
 pub(crate) struct InputState {
